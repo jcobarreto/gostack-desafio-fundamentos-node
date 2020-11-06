@@ -30,7 +30,7 @@ transactionRouter.post('/', (request, response) => {
     );
 
     const transaction = createTransaction.execute({ title, value, type });
-    
+
     return response.json(transaction);
 
   } catch (err) {
